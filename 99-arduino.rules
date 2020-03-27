@@ -1,0 +1,2 @@
+#New USB device found, idVendor=2341, idProduct=0042, bcdDevice= 0.01
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0042", SYMLINK+="ventilator"
