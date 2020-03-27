@@ -6,6 +6,10 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io python3 python3-pip
-pip3 install pymongo pyserial websockets 
+pip3 install pymongo pyserial websockets
+
+# Make udev create /dev/ventilator symlink when an Arduino Mega is plugged in.
+install --user=root --group=root ./99-arduino.rules /etc/udev/rules.d
+udevadm control --reload
 
 echo "Run 'docker-compose up' to start the server"
