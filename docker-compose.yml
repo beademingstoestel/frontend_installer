@@ -1,6 +1,18 @@
 version: '3.4'
 
 services:
+  daemon:
+    image: beademingstoestel/daemon
+    volumes: 
+      - pid:/pid
+    depends_on:
+      - mongo
+      - interface
+    environment:
+      - SERIAL_PORT=/dev/ventilator
+    devices:
+      - "/dev/ventilator:/dev/ventilator"
+    restart: always 
   interface:
     image: beademingstoestel/interface
     ports:
