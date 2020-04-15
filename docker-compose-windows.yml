@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  interface:
+    image: beademingstoestel/interface
+    ports:
+      - 3001:3001
+    volumes: 
+      - pid:/pid
+    depends_on:
+      - mongo
+    restart: always  
+  mongo:
+    image: beademingstoestel/mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes: 
+      - pid:/pid
+volumes: 
+  pid:
+    
