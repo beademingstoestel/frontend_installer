@@ -11,6 +11,7 @@ services:
     environment:
       - SERIAL_PORT=/dev/ventilator
       - MONGO_HOST=mongo
+      - INTERFACE_HOST=interface
     devices:
       - "/dev/ventilator:/dev/ventilator"
     restart: always 
