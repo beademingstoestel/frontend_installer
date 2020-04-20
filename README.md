@@ -25,6 +25,8 @@ Download the [docker-compose.yml](https://github.com/beademingstoestel/frontend_
 
 - docker-compose up
 
+Access the GUI by surfing to http://localhost:3001
+
 ### Updating to a new version
 
 In the directory containing [docker-compose.yml](https://github.com/beademingstoestel/frontend_installer/blob/master/docker-compose.yml) file run following commands:
@@ -38,7 +40,7 @@ You now have the latest version of the software.
 
 ### Prerequisites
 
-- docker and docker-compose
+- [docker ce desktop for windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) 
 - chromium browser
 
 ### How to install
@@ -52,6 +54,8 @@ Run docker-compose up in the directory containing the yml file.
 #### step 2: download and run the daemon
 
 Download the windows build of the daemon from [https://github.com/beademingstoestel/csharp_daemon/tree/master/VentilatorDaemon/publish](https://github.com/beademingstoestel/csharp_daemon/tree/master/VentilatorDaemon/publish) and run the executable found in the directory.
+
+Access the GUI by surfing to http://localhost:3001
 
 ### Updating to a new version
 
