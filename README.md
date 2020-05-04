@@ -53,7 +53,7 @@ Run docker-compose up in the directory containing the yml file.
 
 #### step 2: download and run the daemon
 
-Download the windows build of the daemon from [https://github.com/beademingstoestel/csharp_daemon/tree/master/VentilatorDaemon/publish](https://github.com/beademingstoestel/csharp_daemon/tree/master/VentilatorDaemon/publish) and run the executable found in the directory.
+Download the windows build of the daemon from [https://github.com/beademingstoestel/csharp_daemon/releases](https://github.com/beademingstoestel/csharp_daemon/releases) and run the executable found in the directory.
 
 Access the GUI by surfing to http://localhost:3001
 
@@ -64,6 +64,6 @@ In the directory containing [docker-compose.yml](https://github.com/beademingsto
 - docker-compose pull
 - docker-compose up --force-recreate
 
-Download the latest version of the daemon from [https://github.com/beademingstoestel/csharp_daemon/tree/master/VentilatorDaemon/publish](https://github.com/beademingstoestel/csharp_daemon/tree/master/VentilatorDaemon/publish).
+Download the latest version of the daemon from [https://github.com/beademingstoestel/csharp_daemon/releases](https://github.com/beademingstoestel/csharp_daemon/releases).
 
 You now have the latest version of the software.
